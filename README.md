@@ -72,6 +72,23 @@ though not statistically significant due to sample size.
 
 ![Confounding Analysis](notebooks/figures/fig4_chemo_confounding.png)
 
+### 5. Nottingham Prognostic Index — Validation & Comparison (`notebooks/02_npi_analysis.ipynb`)
+Validation of the NPI clinical score against observed survival in METABRIC, 
+comparison against ML models, and RFS analysis.
+
+- **NPI validates strongly** (log-rank p = 1.96e-13) — four risk groups show 
+  clear, well-separated survival curves consistent with published literature
+- **NPI achieves AUC 0.768 and C-index 0.705** with only 3 variables — 
+  competitive with ML models trained on 8 features
+- **Random Forest improves AUC by 0.069** (0.768 → 0.837) over NPI — 
+  meaningful but modest gain for added complexity
+- **NPI predicts RFS even more strongly than OS** (p = 5.76e-19) — 
+  capturing recurrence risk particularly well
+
+![NPI Validation](notebooks/figures/fig5_npi_validation.png)
+![NPI vs ML](notebooks/figures/fig6_npi_vs_ml.png)
+![RFS Analysis](notebooks/figures/fig7_rfs_analysis.png)
+
 ## Stack
 
 - **Python, pandas** — data ingestion and processing
@@ -130,4 +147,4 @@ jupyter notebook
 
 **Author:** Raquel (Kely) Norel, PhD  
 **Domain:** Oncology / Real-World Evidence  
-**Status:** 🔄 In progress — NPI validation and RFS analysis coming in notebook 02
+**Status:** 🔄 In progress — subtype deep-dive coming in notebook 03
