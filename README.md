@@ -89,6 +89,27 @@ comparison against ML models, and RFS analysis.
 ![NPI vs ML](notebooks/figures/fig6_npi_vs_ml.png)
 ![RFS Analysis](notebooks/figures/fig7_rfs_analysis.png)
 
+### 6. Subtype Deep-Dive (`notebooks/03_subtype_analysis.ipynb`)
+
+Subgroup analysis examining whether prognostic factors identified in the full 
+cohort hold within each molecular subtype.
+
+- **HER2-enriched has the worst short-term prognosis** — 47.2% 5-year mortality 
+  and median OS of 49 months
+- **LumA never reaches 50% survival** within follow-up — confirming its 
+  excellent prognosis
+- **NPI stratifies survival within subtypes** — even within LumA (best prognosis), 
+  the Poor NPI group shows dramatically worse outcomes
+- **Grade loses significance within subtypes** despite being significant in the 
+  full cohort — a classic example of Simpson's paradox
+- **HER2 shows HR=0.57 for grade** — possibly reflecting better response to 
+  targeted therapy in high-grade HER2+ tumors (exploratory, n=36)
+- **LumB has the lowest C-index (0.689)** — suggesting unmeasured molecular 
+  factors drive prognosis beyond clinical variables
+
+![Subtype KM](notebooks/figures/fig8_subtype_km.png)
+![Subtype Cox](notebooks/figures/fig9_subtype_cox.png)
+
 ## Stack
 
 - **Python, pandas** — data ingestion and processing
@@ -147,4 +168,4 @@ jupyter notebook
 
 **Author:** Raquel (Kely) Norel, PhD  
 **Domain:** Oncology / Real-World Evidence  
-**Status:** 🔄 In progress — subtype deep-dive coming in notebook 03
+**Status:** ✅ Complete
