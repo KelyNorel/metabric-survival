@@ -1,0 +1,17 @@
+# Data files
+data/raw/
+data/processed/
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Misc
+go_venv.txt
