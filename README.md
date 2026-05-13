@@ -81,6 +81,7 @@ though not statistically significant due to sample size.
 - **Jupyter** — documented EDA notebook
 
 ## Project Structure
+'''
 metabric-survival/
 ├── data/
 │   ├── raw/          # cBioPortal source files (not tracked in git)
@@ -93,6 +94,7 @@ metabric-survival/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+'''
 
 ## Setup
 
